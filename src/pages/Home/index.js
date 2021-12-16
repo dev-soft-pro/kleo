@@ -5,6 +5,7 @@ import AppleImage from 'assets/images/apple.png'
 import './styles.scss'
 import HowTo from 'components/HowTo';
 import Lessons from 'components/Lessons';
+import Testimonials from 'components/Testimonials';
 
 function Home() {
   return (
@@ -36,6 +37,7 @@ function Home() {
       </div>
       <HowTo />
       <Lessons />
+      <Testimonials />
     </div>
   )
 }

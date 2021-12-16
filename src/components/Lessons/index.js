@@ -1,4 +1,3 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import {
   CarouselProvider,
   Slider,
@@ -9,7 +8,7 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 import './styles.scss'
-import { useEffect, useState, useLayoutEffect, useMemo, useContext } from "react";
+import { useState, useLayoutEffect, useMemo } from "react";
 import LessonMark from 'assets/images/lesson-mark.png';
 export default function Lessons() {
   const lessons = [
