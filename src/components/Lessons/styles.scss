@@ -1,0 +1,128 @@
+.lessons-wrapper {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  background-image: url('../../assets/images/lesson-back-pc.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 178px;
+  padding-bottom: 106px;
+  .dash-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .dash {
+      width: 100px;
+      height: 2px;
+      background: white;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 57.2px;
+      color: white;
+      position: relative;
+      margin: 0 50px;
+    }
+  }
+  .lesson-carousel {    
+    margin-top: 50px;
+    /* gives us the illusion of a "centered" slide */
+    .carousel__slider {
+      padding-left: 12.5%;
+      padding-right: 12.5%;
+    }
+    
+    /* gives us the illusion of spaces between the slides */
+    .carousel__inner-slide {
+      width: calc(100% - 30px);
+      height: calc(100% - 30px);
+      left: 15px;
+      top: 15px;
+      background-color: white;
+      border-radius: 20px;
+      .lesson-image {
+        width: 100%;
+        height: auto;
+        position: relative;
+        .img {
+          border-radius: 20px 20px 0 0;
+        }
+        .mark {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+        }
+      }
+      .lesson-no {
+        position: absolute;
+        border-radius: 20px 0 20px 0;
+        width: 50px;
+        height: 50px;
+        top: -1px;
+        left: -1px;
+        background: #6835F8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: white;
+      }
+      .lesson-name {
+        text-align: left;
+        padding: 30px 20px;
+        .title {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        .learn {
+          margin-top: 5px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .slider-back-white {
+      width: 50px;
+      height: 50px;
+      background-image: url('../../assets/images/slider-arrow-left.svg');
+      background-color: transparent;
+      padding: 0;
+      border: 0;
+      position: absolute;
+      top: calc(50% - 25px);
+      left: 6%;
+    }
+    .slider-next-white {
+      width: 50px;
+      height: 50px;
+      background-image: url('../../assets/images/slider-arrow-right.svg');
+      background-color: transparent;
+      padding: 0;
+      border: 0;
+      position: absolute;
+      top: calc(50% - 25px);
+      right: 6%;
+    }
+    .first-mask {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      width: 12.5%;
+      height: calc(100% - 30px);
+      background: linear-gradient(270deg, rgba(104, 53, 248, 0) 0%, #6835F8 100%);
+    }
+    .last-mask {
+      position: absolute;
+      top: 15px;
+      right: 0;
+      width: 12.5%;
+      height: calc(100% - 30px);
+      background: linear-gradient(270deg, rgba(170, 0, 255, 0) 0%, #AA00FF 100%);
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+}

@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans'), url('./assets/fonts/NotoSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
 .App {
   text-align: center;
+  font-family: 'Noto Sans';
 }
 
 .App-logo {
@@ -36,3 +42,6 @@
     transform: rotate(360deg);
   }
 }
+
+// colors
+$white: #FFF
