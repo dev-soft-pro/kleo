@@ -3,7 +3,7 @@ import Demo from 'assets/images/demo.png'
 import './styles.scss'
 export default function Top() {
   return (
-    <div className="graphic-top">
+    <div className="graphic-top" id="home">
       <div className="top-content">
         <div className="top-text">
           <div className="title">What if a tutor and an app had a baby?</div>
