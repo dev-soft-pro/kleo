@@ -3,24 +3,21 @@
   padding: 50px 9.3vw;
   .dash-title {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
     .dash {
-      width: 600px;
+      width: 100px;
       height: 2px;
-      background: linear-gradient(90deg, #6835F8 0%, #AA00FF 100%);
-      position: absolute;
-      top: 28px;
+      background: linear-gradient(90deg, #6835F8 0%, #AA00FF 100%);;
     }
     .title {
       font-weight: 700;
       font-size: 42px;
       line-height: 57.2px;
       color: #050C28;
-      background: white;
-      padding: 0 50px;
       position: relative;
+      margin: 0 50px;
     }
   }
   .card-wrapper {

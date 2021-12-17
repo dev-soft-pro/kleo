@@ -53,6 +53,7 @@ export default function HowTo() {
       <div className="dash-title">
         <div className="dash" />
         <div className="title">How It Works</div>
+        <div className="dash" />
       </div>
       <div className="card-wrapper">
         {cardData.map((cd, idx) =>
