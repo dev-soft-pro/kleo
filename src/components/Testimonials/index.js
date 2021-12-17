@@ -62,7 +62,9 @@ export default function Testimonials() {
 
   const cardHeight = useMemo(() => {
     const width = size[0]
-    if (width < 768) {
+    if (width < 640) {
+      return 782
+    } else if (width < 768) {
       return 400
     } else if (width < 960) {
       return 330

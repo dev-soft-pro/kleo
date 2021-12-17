@@ -64,7 +64,7 @@ export default function HowTo() {
           </div>
         )}
       </div>
-      <table className="feature-table">
+      <table className="feature-table-pc">
         <thead>
           <tr>
             <th>FEATURE</th>
@@ -84,6 +84,27 @@ export default function HowTo() {
           )}
         </tbody>
       </table>
+      {featureData.map((fd, idx) => 
+        <table className="feature-table-sp" key={`table-${idx}`}>
+          <thead>
+            <tr>
+              <th colSpan={3}>{fd.title}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th width="33%">KLEO</th>
+              <th width="33%">OTHER APPS</th>
+              <th width="33%">IN-PERSON</th>
+            </tr>
+            <tr>
+              <td><img src={fd.values[0] ? CheckedMark : UnCheckedMark} alt="checked" /></td>
+              <td><img src={fd.values[1] ? CheckedMark : UnCheckedMark} alt="checked" /></td>
+              <td><img src={fd.values[2] ? CheckedMark : UnCheckedMark} alt="checked" /></td>
+            </tr>
+          </tbody>
+        </table>
+      )}
     </div>
   )
 }

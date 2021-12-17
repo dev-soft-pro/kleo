@@ -13,14 +13,8 @@ export default function Footer() {
   const [currentOption, setCurrentOption] = useState({ value: 'EN', label: 'English' });
   return (
     <footer className="footer">
-      <div className="footer-left">
+      <div className="footer-above">
         <img src={LogoSVG} alt="logo" />
-        <div className="small-text copyright">
-          Copyright @ 2021 Kleo. All rights reserved. <br/>
-          Patent pending
-        </div>
-      </div>
-      <div className="footer-right">
         <div className="select-wrapper">
           <div className="small-text select-label">Pick a language</div>
           <Select
@@ -29,6 +23,12 @@ export default function Footer() {
             value={currentOption}
             classNamePrefix="select-lang"
             onChange={v => setCurrentOption(v)} />
+        </div>
+      </div>
+      <div className="footer-below">
+        <div className="small-text copyright">
+          Copyright @ 2021 Kleo. All rights reserved. <br/>
+          Patent pending
         </div>
         <div className="small-text underline">Legal stuff</div>
       </div>

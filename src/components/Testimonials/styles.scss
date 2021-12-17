@@ -33,6 +33,9 @@
       padding-left: 28%;
       padding-right: 28%;
     }
+    .carousel__slide--visible .carousel__inner-slide {
+      border: 1px #6835F8 solid;
+    }
     .carousel__inner-slide {
       width: calc(100% - 60px);
       height: 100%;
@@ -44,6 +47,8 @@
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
+      border-radius: 10px;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
       .quote-img{
         width: 40px;
         height: 30px;
@@ -61,6 +66,7 @@
           text-overflow: ellipsis;
           overflow: hidden;
           max-height: 78px;
+          opacity: 0.7;
         }
         .profile {
           display: flex;
@@ -124,6 +130,83 @@
       height: 100%;
       background: linear-gradient(270deg, rgba(249, 249, 249, 0) 0%, #F9F9F9 31.77%);
       transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .testimonials-wrapper {
+    background-image: url('../../assets/images/testimonial-back-sp.png');
+    padding-top: 83px;
+    padding-bottom: 92px;
+    margin-top: -40px;
+    .dash-title {
+      .dash {
+        width: 50px;
+      }
+      .title {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0 20px;
+      }
+    }
+    .td-carousel {
+      margin-top: 30px;
+      .carousel__slider {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+      .carousel__slide--visible .carousel__inner-slide {
+        transform: scale(1);
+      }
+      .carousel__inner-slide {
+        width: calc(100% - 15px);
+        left: 7.5px;
+        padding: 30px 20px;
+        text-align: center;
+        align-items: center;
+        transform: scale(0.9);
+        .quote-img {
+          width: 30px;
+          height: 22px;
+        }
+        .info {
+          .feedback {
+            font-size: 14px;
+            line-height: 22px;
+            max-height: 154px;
+          }
+          .profile {
+            img {
+              width: 35px;
+              height: 35px;
+              border-radius: 17.5px;
+            }
+            .profile_text {
+              margin-left: 20px;
+              text-align: left;
+              width: 140px;
+              .name {
+                font-size: 14px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+  
+      .slider-back-white {
+        display: none;
+      }
+      .slider-next-white {
+        display: none;
+      }
+      .first-mask {
+        display: none;
+      }
+      .last-mask {
+        display: none;
+      }
     }
   }
 }

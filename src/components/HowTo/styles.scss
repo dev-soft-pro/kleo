@@ -45,7 +45,7 @@
       }
     }
   }
-  .feature-table {
+  .feature-table-pc {
     margin-top: 70px;
     width: 100%;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
@@ -73,6 +73,94 @@
       tr > td {
         padding: 30px;
         border: 1px solid rgba(104, 53, 248, 0.1);
+      }
+    }
+  }
+  .feature-table-sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .howto-wrapper {
+    padding: 50px 20px;
+    margin: 0;
+    .dash-title {
+      .dash {
+        width: 50px;
+        height: 2px;
+      }
+      .title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 33px;
+        margin: 0 20px;
+      }
+    }
+    .card-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0;
+      .card {
+        max-width: 350px;
+        width: 100%;
+        margin-top: 30px;
+        img {
+          max-width: 350px;
+          width: 100%;
+        }
+        .title {
+          font-size: 20px;
+          line-height: 27px;
+          font-weight: bold;
+          margin-top: 20px;
+          padding: 0 10px;
+        }
+        .desc {
+          font-size: 16px;
+          line-height: 28px;
+          margin-top: 10px;
+          opacity: 0.7;
+        }
+      }
+    }
+    .feature-table-pc {
+      display: none;
+    }
+    .feature-table-sp {
+      display: table;
+      border-spacing: 0;
+      border-radius: 10px;
+      width: 100%;
+      margin-top: 20px;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+      border-radius: 0px 0px 10px 10px;
+      thead {
+        background: linear-gradient(90deg, #6835F8 0%, #AA00FF 100%);
+        border-radius: 10px 10px 0px 0px;
+        color: white;
+        tr > th {
+          padding: 16px;
+          border-radius: 10px 10px 0 0;
+          font-size: 14px;
+          line-height: 19px;
+          font-weight: normal;
+        }
+      }
+      tbody {
+        tr > th, tr > td {
+          padding: 15px;
+          font-size: 12px;
+          line-height: 16px;
+          &:not(:last-child) {
+            border-right: 1px solid rgba(104, 53, 248, 0.1);
+          }
+        }
+        tr:not(:last-child) {
+          td, th {
+            border-bottom: 1px solid rgba(104, 53, 248, 0.1);
+          }
+        }
       }
     }
   }
