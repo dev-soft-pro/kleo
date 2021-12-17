@@ -1,0 +1,21 @@
+[debug] [2021-12-17T17:49:13.149Z] ----------------------------------------------------------------------
+[debug] [2021-12-17T17:49:13.151Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Stravoltary\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-12-17T17:49:13.152Z] CLI Version:   9.18.0
+[debug] [2021-12-17T17:49:13.152Z] Platform:      win32
+[debug] [2021-12-17T17:49:13.152Z] Node Version:  v16.13.0
+[debug] [2021-12-17T17:49:13.153Z] Time:          Sat Dec 18 2021 01:49:13 GMT+0800 (Taipei Standard Time)
+[debug] [2021-12-17T17:49:13.153Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-17T17:49:13.163Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-17T17:49:13.164Z] > authorizing via signed-in user (hokelucpy@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\kcc\kleo-react
+
