@@ -1,0 +1,40 @@
+.manage-wrapper {
+  width: auto;
+  height: auto;
+  background-image: url('../../assets/images/manage-back-pc.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 164px 9.3vw 90px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  color: #050C28;
+  .manage-content {
+    max-width: 460px;
+    .title {
+      font-size: 42px;
+      font-weight: bold;
+      line-height: 60px;
+    }
+    .content {
+      font-size: 18px;
+      font-weight: 32px;
+      letter-spacing: -0.04em;
+    }
+    .apple-get {
+      margin-top: 40px;
+      .title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.04em;
+      }
+      img {
+        margin-top: 10px;
+      }
+    }
+  }
+  .manage-image {
+    margin-right: 20%;
+  }
+}

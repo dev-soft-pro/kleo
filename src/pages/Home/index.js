@@ -6,6 +6,9 @@ import './styles.scss'
 import HowTo from 'components/HowTo';
 import Lessons from 'components/Lessons';
 import Testimonials from 'components/Testimonials';
+import Team from 'components/Team';
+import Download from 'components/Download';
+import Footer from 'components/Footer';
 
 function Home() {
   return (
@@ -38,6 +41,9 @@ function Home() {
       <HowTo />
       <Lessons />
       <Testimonials />
+      <Team />
+      <Download />
+      <Footer />
     </div>
   )
 }

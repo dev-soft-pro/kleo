@@ -49,7 +49,7 @@ export default function HowTo() {
   ]
 
   return (
-    <div className="howto-wrapper">
+    <div className="howto-wrapper" id="howto">
       <div className="dash-title">
         <div className="dash" />
         <div className="title">How It Works</div>

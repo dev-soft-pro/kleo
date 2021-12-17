@@ -1,11 +1,12 @@
+import React, { useState, useMemo, useLayoutEffect } from 'react'
 import {
   CarouselProvider,
   Slider,
   Slide,
   ButtonBack,
   ButtonNext
-} from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
+} from "pure-react-carousel"
+import "pure-react-carousel/dist/react-carousel.es.css"
 import Quotemark from 'assets/images/quote_mark.svg'
 import './styles.scss'
 
@@ -49,8 +50,33 @@ const testimonialsData = [
 ]
 
 export default function Testimonials() {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
+
+  const cardHeight = useMemo(() => {
+    const width = size[0]
+    if (width < 768) {
+      return 400
+    } else if (width < 960) {
+      return 330
+    } else if (width < 1024) {
+      return 300
+    } else if (width < 1440){
+      return 270
+    } else {
+      return 220
+    }
+  }, [size]);
+
   return (
-    <div className="testimonials-wrapper">
+    <div className="testimonials-wrapper" id="test">
       <div className="dash-title">
         <div className="dash" />
         <div className="title">Testimonials</div>
@@ -58,7 +84,7 @@ export default function Testimonials() {
       </div>
       <CarouselProvider
         naturalSlideWidth={630}
-        naturalSlideHeight={270}
+        naturalSlideHeight={cardHeight}
         totalSlides={testimonialsData.length}
         visibleSlides={1}
         currentSlide={0}
@@ -67,9 +93,7 @@ export default function Testimonials() {
         <Slider onFocus={(e) => console.log(e)}>
           {testimonialsData.map((td, index) => 
             <Slide index={index} key={index}>
-              <div className="quote">
-                <img src={Quotemark} alt="Quote" />
-              </div>
+              <img className="quote-img" src={Quotemark} alt="Quote" />
               <div className="info">
                 <div className="feedback">
                   {td.feedback}

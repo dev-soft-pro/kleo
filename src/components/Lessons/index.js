@@ -48,7 +48,6 @@ export default function Lessons() {
   const [size, setSize] = useState([0, 0]);
   useLayoutEffect(() => {
     function updateSize() {
-      console.log(window.innerWidth)
       setSize([window.innerWidth, window.innerHeight]);
     }
     window.addEventListener('resize', updateSize);
@@ -58,18 +57,16 @@ export default function Lessons() {
 
   const visibleLessons = useMemo(() => {
     const width = size[0]
-    console.log(width)
     let res = 3;
     if (width < 768) 
       res = 1;
     else if (width < 992)
       res = 2;
-    console.log(res)
     return res;
   }, [size]);
 
   return (
-    <div className="lessons-wrapper">
+    <div className="lessons-wrapper" id="lessons">
       <div className="dash-title">
         <div className="dash" />
         <div className="title">Our Lessons</div>
