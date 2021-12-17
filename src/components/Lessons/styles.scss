@@ -84,6 +84,7 @@
         .learn {
           margin-top: 5px;
           font-size: 14px;
+          opacity: 0.7;
         }
       }
     }
@@ -151,6 +152,9 @@
         padding-right: 12.5%;
       }
       
+      .carousel__slide--visible .carousel__inner-slide {
+        transform: scale(1);
+      }
       /* gives us the illusion of spaces between the slides */
       .carousel__inner-slide {
         width: calc(100% - 30px);
@@ -160,6 +164,8 @@
         background-color: white;
         border-radius: 10px;
         box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+        transform: scale(0.9);
+        transition: .5s ease-in-out;
         .lesson-image {
           width: 100%;
           height: auto;
@@ -195,12 +201,12 @@
           text-align: left;
           padding: 15px 5%;
           .title {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
           }
           .learn {
-            margin-top: 5px;
-            font-size: 14px;
+            margin-top: 0;
+            font-size: 12px;
           }
         }
       }

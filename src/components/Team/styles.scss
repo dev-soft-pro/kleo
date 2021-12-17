@@ -2,7 +2,7 @@
   width: auto;
   height: auto;
   margin-top: 60px;
-  padding: 50px 9.3vw;
+  padding: 70px 9.3vw;
   .dash-title {
     display: flex;
     justify-content: center;
@@ -96,7 +96,8 @@
 }
 @media screen and (max-width: 640px) {
   .team-wrapper {
-    padding: 50px 20px 104px 20px;
+    padding: 70px 20px 104px 20px;
+    margin-top: 30px;
     .dash-title {
       .dash {
         width: 50px;

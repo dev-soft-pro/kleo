@@ -13,7 +13,7 @@ import Footer from 'components/Footer';
 function Home() {
   return (
     <div className="home-container">
-      {/* <Navbar /> */}
+      <Navbar />
       <Top />
       <HowTo />
       <Lessons />
