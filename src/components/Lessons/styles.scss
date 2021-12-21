@@ -131,6 +131,13 @@
   }
 }
 
+@media screen and (min-width: 1441px) {
+  .lessons-wrapper {
+    width: 1440px;
+    padding: 178px calc(50% - 720px) 206px;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .lessons-wrapper {
     margin-top: 30px;

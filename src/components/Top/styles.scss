@@ -6,133 +6,147 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 20px 0 200px 9.3vw;
-  position: relative;
-  overflow: hidden;
   display: flex;
-  justify-content: space-between;
-  .top-content {
-    width: 52%;
-    max-width: 600px;
-    color: white;
-    margin-top: 174px;
-    .top-text {
-      .title {
-        font-size: 60px;
-        line-height: 72px;
-        font-weight: 600;
-        letter-spacing: -0.04em;
-      }
-      .content {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        margin-right: 50px;
-        margin-top: 20px;
-      }
-    }
-    .apple-get {
-      margin-top: 40px;
-      .title {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.04em;
-      }
-      img {
-        margin-top: 10px;
-      }
-    }
-    .signup-form {
-      margin: 30px 0;
-      padding: 20px;
-      width: 429px;
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
-      .title {
-        font-size: 16px;
-        line-height: 24px;
-      }
-      .input {
-        margin-top: 20px;
-        input, input:focus-visible {
-          background: transparent;
-          border: none;
-          border-bottom: 1px solid white;
-          outline: none;
-          color: white;
-          margin-right: 20px;
-          font-size: 22px;
-          padding: 10px;
+  justify-content: center;
+  
+  .graphic-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    .top-content {
+      width: 52%;
+      max-width: 600px;
+      color: white;
+      margin-top: 174px;
+      .top-text {
+        .title {
+          font-size: 60px;
+          line-height: 72px;
+          font-weight: 600;
+          letter-spacing: -0.04em;
         }
-        button {
-          background: #F95761;
-          padding: 15px 20px;
-          font-family: 'Noto Sans';
+        .content {
           font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          margin-right: 50px;
+          margin-top: 20px;
+        }
+      }
+      .apple-get {
+        margin-top: 40px;
+        .title {
+          font-size: 18px;
           font-weight: 500;
           line-height: 24px;
-          color: white;
-          border-radius: 5px;
-          border: none;
-          white-space: nowrap;
+          letter-spacing: -0.04em;
+        }
+        img {
+          margin-top: 10px;
+        }
+      }
+      .signup-form {
+        margin: 30px 0;
+        padding: 20px;
+        width: 429px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        .title {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        .input {
+          margin-top: 20px;
+          input, input:focus-visible {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            margin-right: 20px;
+            font-size: 22px;
+            padding: 10px;
+          }
+          button {
+            background: #F95761;
+            padding: 15px 20px;
+            font-family: 'Noto Sans';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            white-space: nowrap;
+          }
         }
       }
     }
+    .image-demo {
+      width: 58vw;
+      height: 58vw;
+      max-width: 827px;
+      max-height: 827px;
+      margin-left: -8%;
+      // margin-right: -3.5%;
+    }
   }
-  .image-demo {
-    width: 58vw;
-    height: 58vw;
-    max-width: 827px;
-    max-height: 827px;
-    margin-left: -8%;
-    margin-right: -3.5%;
+}
+
+@media screen and (min-width: 1441px) {
+  .graphic-top {
+    padding: 20px 0 200px 0;
   }
 }
 
 @media screen and (max-width: 640px) {
   .graphic-top {
     background-image: url('../../assets/images/top-back-sp.png');
-    width: 100vw;
     padding: 20px 20px 104px 20px;
-    box-sizing: border-box;
-    text-align: center;
-    .top-content {
-      width: 100%;
-      margin-top: 120px;
-      .top-text {
-        .title {
-          font-size: 36px;
-          line-height: 46px;
-          letter-spacing: -0.04em;
-        }
-        .content {
-          margin-right: 0;
-        }
-      }
-      .signup-form {
-        width: auto;
-        text-align: left;
-        padding: 20px 10px 20px 20px;
-        .title {
-          font-size: 14px;
-          line-height: 20px;
-        }
-        .input {
-          margin-top: 20px;
-          input, input:focus-visible {
-            width: 176px;
-            margin-right: 10px;
+    .graphic-wrapper {
+      width: 100vw;
+      box-sizing: border-box;
+      text-align: center;
+      .top-content {
+        width: 100%;
+        margin-top: 120px;
+        .top-text {
+          .title {
+            font-size: 36px;
+            line-height: 46px;
+            letter-spacing: -0.04em;
           }
-          button {
-            padding: 10px 15px;
+          .content {
+            margin-right: 0;
+          }
+        }
+        .signup-form {
+          width: auto;
+          text-align: left;
+          padding: 20px 10px 20px 20px;
+          .title {
             font-size: 14px;
             line-height: 20px;
           }
+          .input {
+            margin-top: 20px;
+            input, input:focus-visible {
+              width: 176px;
+              margin-right: 10px;
+            }
+            button {
+              padding: 10px 15px;
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
         }
       }
-    }
-    .image-demo {
-      display: none;
+      .image-demo {
+        display: none;
+      }
     }
   }
 }

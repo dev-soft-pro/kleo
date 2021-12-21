@@ -39,6 +39,14 @@
     margin-right: 20%;
   }
 }
+
+@media screen and (min-width: 1441px) {
+  .manage-wrapper {
+    width: 1440px;
+    padding: 164px calc(50% - 720px) 90px;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .manage-wrapper {
     background-image: url('../../assets/images/manage-back-sp.png');

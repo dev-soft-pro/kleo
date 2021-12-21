@@ -34,6 +34,11 @@
     display: none;
   }
 }
+@media screen and (min-width: 1441px) {
+  .navbar-wrapper {
+    padding: 0 calc(50% - 720px);
+  }
+}
 @media screen and (max-width: 640px) {
   .navbar-wrapper {
     padding: 20px;
